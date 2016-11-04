@@ -1,0 +1,5 @@
+ dubbo:reference 的一些属性的说明：
+      1）interface调用的服务接口
+      2）check 启动时检查提供者是否存在，true报错，false忽略
+      3）registry 从指定注册中心注册获取服务列表，在多个注册中心时使用，值为<dubbo:registry>的id属性，多个注册中心ID用逗号分隔
+      4）loadbalance 负载均衡策略，可选值：random,roundrobin,leastactive，分别表示：随机，轮循，最少活跃调用

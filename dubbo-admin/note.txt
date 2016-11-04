@@ -1,0 +1,3 @@
+1、首先启动zookeeper 
+2、tomcat服务器端口需变动，不能和8080 冲突
+3、登录用户和密码分别是 root/root | guest|guest
