@@ -15,7 +15,10 @@
    <dubbo:application name="dubbo_server"></dubbo:application>  
    <!-- 使用zookeeper注册中心暴露服务地址 -->    
    <dubbo:registry address="zookeeper://127.0.0.1:2181" check="false" subscribe="false" register=""></dubbo:registry>  
+   <!-- 用dubbo协议在20880端口暴露服务 -->
+   <dubbo:protocol name="dubbo" port="20880" />
   <!-- 要暴露的服务接口 -->    
   <dubbo:service interface="com.framework.baseservice.dubbo.server.api.RegisterService" ref="registerService" />  
+  <!-- 本地服务接口 -->
   <bean id="registerService" class="com.framework.server.impl.RegisterServiceImpl"/>      
 </beans>  

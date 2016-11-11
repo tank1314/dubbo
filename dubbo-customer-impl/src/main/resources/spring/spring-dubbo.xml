@@ -17,6 +17,6 @@
    <dubbo:registry address="zookeeper://127.0.0.1:2181" check="false" subscribe="false" register=""></dubbo:registry>  
   <!-- 引用的服务接口 -->    
  <!--  <dubbo:reference interface="com.framework.baseservice.dubbo.server.api.RegisterService" id="registerService"></dubbo:reference> -->
-  <dubbo:reference id="registerService" interface="com.framework.baseservice.dubbo.server.api.RegisterService"/>
+  <dubbo:reference id="registerService" url="dubbo://10.88.76.184:20880" interface="com.framework.baseservice.dubbo.server.api.RegisterService"/>
   
 </beans>  

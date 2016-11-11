@@ -11,7 +11,7 @@ public class DemoCustomerService {
         ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("classpath*:/spring/*.xml");
         context.start();
         System.out.println("客户端启动成功!");
-        RegisterService registerService = (RegisterService) context.getBean("registerService");
+        RegisterService registerService = (RegisterService) context.getBean("registerService");//获取远程代理
         String str = registerService.sayHello("tankun") ;
         System.out.println(str);
 	}
